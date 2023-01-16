@@ -1,0 +1,92 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 15px 0;
+}
+p {
+  margin: 10px 0;
+}
+image {
+  max-width: 100%;
+}
+
+.itemToHover:hover > a {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  left: 0;
+}
+.itemToHover:hover > a > h3 {
+  opacity: 1;
+}
+.itemToHover > a > h3 {
+  transition: all 3s ease-in-out;
+  width: 100%;
+  text-align: center;
+  top: 45%;
+  transform: translateY(-60%);
+}
+.animateOpacity {
+  animation: animOpacity 3s;
+}
+@keyframes animOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.marginTop {
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggleCart {
+  margin-right: -100%;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 26px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+}
