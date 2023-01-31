@@ -90,3 +90,21 @@ image {
     font-size: 16px !important;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .toggleCart {
+  margin-right: -130% !important;
+}
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  h4 {
+    font-size: 15px !important;
+  }
+}
