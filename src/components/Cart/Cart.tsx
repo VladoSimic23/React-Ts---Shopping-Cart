@@ -16,7 +16,7 @@ const Cart = () => {
 
   return (
     <div
-      className={`sm:w-full fixed right-0 top-0 bg-gray-100 h-screen z-30 p-6 md:w-96 transition-all duration-500 ease-in-out overflow-y-scroll ${
+      className={`xs:w-full fixed right-0 top-0 bg-gray-100 h-screen z-30 p-6 sm:w-96 transition-all duration-500 ease-in-out overflow-y-scroll ${
         isCartOpen && "toggleCart"
       }`}
     >
