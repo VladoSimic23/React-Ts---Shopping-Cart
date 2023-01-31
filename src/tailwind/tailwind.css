@@ -93,7 +93,7 @@ image {
 
 @media only screen and (max-width: 600px) {
   .toggleCart {
-  margin-right: -130% !important;
+  margin-right: -300% !important;
 }
   h1 {
     font-size: 22px !important;
