@@ -21,7 +21,6 @@ const Categories = () => {
 
   const { errorDb, dataDb } = useFetchDB(getAllCategories);
   const data: string[] = dataDb;
-  const newSetData = ["all", ...data];
   const dispatch = useAppDispatch();
   const {
     productsState: { allCategories },
@@ -29,10 +28,11 @@ const Categories = () => {
   const memoizedCategories = useMemo(() => allCategories, [allCategories]);
 
   useEffect(() => {
+    const newSetData = ["all", ...data];
     if (memoizedCategories.length < 2) {
       dispatch(setAllCategories(newSetData));
     }
-  }, [data, dispatch,memoizedCategories.length]);
+  }, [data, dispatch, memoizedCategories.length]);
 
   const handleCategory = (category: string, index: number) => {
     localStorage.setItem("categoryIndex", JSON.stringify(index));
