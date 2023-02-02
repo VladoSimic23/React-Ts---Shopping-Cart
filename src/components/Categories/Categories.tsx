@@ -45,7 +45,7 @@ const Categories = () => {
   }
 
   return (
-    <div className="lg:col-span-1 p-2 animateOpacity min-[320px]:max-w-md min-[320px]:text-center min-[320px]:mx-auto lg:max-w-full">
+    <div className="lg:col-span-1 p-2 min-[320px]:max-w-md min-[320px]:text-center min-[320px]:mx-auto lg:max-w-full">
       <h3>Categories</h3>
       {memoizedCategories &&
         memoizedCategories.map((category, index) => {
