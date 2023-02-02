@@ -9,6 +9,7 @@ const initialState: ProductsStateI = {
   isCartOpen: true,
   total: 0,
   totalItems: 0,
+  allCategories: [],
 };
 
 export const productsSlice = createSlice({
@@ -21,6 +22,11 @@ export const productsSlice = createSlice({
     setCategory: (state, action: PayloadAction<string>) => {
       localStorage.setItem("category", JSON.stringify(action.payload));
       state.currentCategory = action.payload;
+    },
+    setAllCategories: (state, action: PayloadAction<string[]>) => {
+      // localStorage.setItem("category", JSON.stringify(action.payload));
+
+      state.allCategories = action.payload;
     },
     getCategoryStorage: (state, action) => {
       const getStorage = localStorage.getItem("category");
@@ -122,6 +128,8 @@ export const {
   removeItemFromCart,
   emptyCart,
   getCategoryStorage,
+  setAllCategories,
 } = productsSlice.actions;
 export const selectProducts = (state: RootState) => state;
 export default productsSlice.reducer;
+
