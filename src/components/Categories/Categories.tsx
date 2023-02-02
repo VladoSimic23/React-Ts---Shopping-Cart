@@ -32,7 +32,7 @@ const Categories = () => {
     if (memoizedCategories.length < 2) {
       dispatch(setAllCategories(newSetData));
     }
-  }, [data, dispatch]);
+  }, [data, dispatch,memoizedCategories.length,newSetData]);
 
   const handleCategory = (category: string, index: number) => {
     localStorage.setItem("categoryIndex", JSON.stringify(index));
