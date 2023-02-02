@@ -17,7 +17,7 @@ import Product from "./Product";
 import { capitalizeFirstLetter } from "../../utils";
 
 const Home = () => {
-  const { dataDb, errorDb, loadingDb } = useFetchDB(productsUrl);
+  const { dataDb, errorDb } = useFetchDB(productsUrl);
   const {
     productsState: { products, currentCategory, cart },
   } = useAppSelector(selectProducts);
