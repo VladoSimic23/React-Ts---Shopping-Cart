@@ -25,4 +25,5 @@ export interface ProductsStateI {
   isCartOpen: boolean;
   total: number;
   totalItems: number;
+  allCategories: string[];
 }
