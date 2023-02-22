@@ -16,3 +16,6 @@ Redux Toolkit is a package that simplifies the use of Redux by providing a set o
 
 ## Typescript
 TypeScript is a superset of JavaScript that adds optional static type checking and other features to improve the development experience, catch errors earlier, and make code more scalable and maintainable. It compiles down to plain JavaScript, allowing developers to use it in any environment that supports JavaScript.
+
+## Tailwind css
+Tailwind CSS is a utility-first CSS framework that provides a set of pre-defined styles that can be used to rapidly build custom user interfaces. It includes a comprehensive set of CSS classes that cover a wide range of design requirements such as typography, layout, and color. With Tailwind CSS, you can quickly create custom designs without writing a lot of custom CSS code. It also provides the ability to customize and extend the framework to fit your project's needs. Tailwind CSS is a popular choice for developers who want to build modern and responsive user interfaces quickly and efficiently.
